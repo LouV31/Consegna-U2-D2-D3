@@ -1,0 +1,126 @@
+@import "./colors";
+@import "./spacings";
+@import "./font";
+@import "./mixins";
+@import "./animations";
+@import "./btn";
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-around {
+    justify-content: space-around;
+}
+.justify-content-start {
+    justify-content: flex-start;
+}
+.justify-content-end {
+    justify-content: flex-end;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.align-items {
+    align-items: center;
+}
+.align-items-start {
+    align-items: flex-start;
+}
+.align-items-end {
+    align-items: flex-end;
+}
+.align-items-baseline {
+    align-items: baseline;
+}
+
+header {
+    nav {
+        background-color: $warningColor;
+        .navbar {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+
+            & li {
+                list-style: none;
+            }
+
+            & li a {
+                text-decoration: none;
+                color: $primaryColor;
+
+                &:hover {
+                    color: scale-color($primaryColor, $lightness: 50%);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-around {
+    justify-content: space-around;
+}
+.justify-content-start {
+    justify-content: flex-start;
+}
+.justify-content-end {
+    justify-content: flex-end;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.align-items {
+    align-items: center;
+}
+.align-items-start {
+    align-items: flex-start;
+}
+.align-items-end {
+    align-items: flex-end;
+}
+.align-items-baseline {
+    align-items: baseline;
+}
+.hero {
+    background-color: $heroColor;
+    .title-big {
+        @include title-big(3rem, $textColor, 2rem);
+    }
+    .text-hero {
+        @include title-big(1rem, $textColor, 0.5rem);
+        font-style: italic;
+    }
+}
